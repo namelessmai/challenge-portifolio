@@ -34,12 +34,11 @@ a{
 }
 
 /*Sessão Menu*/
-section.menu{
+section.menu {
     background: var(--cor-setima);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 6px 3px rgba(0, 0, 0, 0.1);
 }
 
 .menu__logo{
@@ -50,17 +49,18 @@ section.menu{
 .menu__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     margin-right: 2.5rem;
-    display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 /*Sessão Title*/
 section.title{
     background-color: var(--cor-segunda);
-    padding: 10% 5% 4% 5%;
+    padding: 5%;
 }
+
 .title__div{
     display: flex;
     flex-direction: row-reverse;
@@ -107,7 +107,7 @@ section.about{
 }
 
 .about__title{
-    font-size: 3em;
+    font-size: 2em;
     font-family: var(--fonte-secundaria);
     font-weight: 100;
 }
@@ -128,6 +128,13 @@ section.skills{
     background-color: var(--cor-segunda);
 }
 
+.skills__title{
+    font-size: 2em;
+    font-weight: 100;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-quarta);
+}
+
 .skills__line {
     display: flex;
     align-items: center;
@@ -144,11 +151,7 @@ section.skills{
     background-color:white;
     padding: 1rem;
 }
-.skills__title{
-    font-size: 2em;
-    font-family: var(--fonte-secundaria);
-    color: var(--cor-quarta);
-}
+
 
 /* Experiência Acadêmica*/
 section.academic{
@@ -174,6 +177,11 @@ section.academic{
     padding: 0;
 }
 
+.academic__courses__item__img{
+    background: #ffffff;
+    padding: 3em;
+}
+
 .academic__courses__list h4{
     font-size: 1em;
     font-weight: 100;
@@ -186,11 +194,6 @@ section.academic{
     font-family: var(--fonte-principal);
     color: var(--cor-terceira);
     margin: 0;
-}
-
-.academic__courses__item__img{
-    background: #ffffff;
-    padding: 3em;
 }
 
 /* experiência*/
@@ -298,6 +301,14 @@ section.formcontato{
     padding: 2% 5%;
 }
 
+.formcontato__title{
+    font-family: var(--fonte-secundaria);
+    font-size: 2em;
+    font-weight: 100;
+    color: var(--cor-terceira);
+    margin: 5px 0px;
+}
+
 .formcontato__contacto{
     display: flex;
     flex-direction: row-reverse;
@@ -340,12 +351,6 @@ section.formcontato{
     border: 1px solid var(--cor-terceira);
 }
 
-.formcontato__title{
-    font-family: var(--fonte-secundaria);
-    color: var(--cor-terceira);
-    margin: 5px 0px;
-}
-
 .formcontato__subtext{
     font-family: var(--fonte-principal);
     font-weight: 100;
@@ -366,18 +371,20 @@ section.formcontato{
 
 /*Footer*/
 .footer__rodape {
-    padding: 2%;
+    padding: 1%;
     background-color: var(--cor-setima);
     color: var(--cor-segunda);
     font-family: var(--fonte-principal);
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.1);
 }
 
 .footer__rodape p {
     margin: 1px;
 }
+
 
 /*Tablet*/
 @media (max-width: 768px) {
@@ -397,7 +404,7 @@ section.menu{
     display: block;
 }
 
-/*title*/
+/*Title*/
 section.title{
     padding: 6% 3%;
 }
@@ -545,7 +552,6 @@ section.title{
 }
 
 
-
 /*Mobile*/
 @media (max-width: 425px) {
 
@@ -628,7 +634,7 @@ section.skills{
     font-size: 0.6em;
 }
 
-/*Experiência Profissional*/
+/*Projetos*/
 .experience__info{
     width: 70vw;
 }
@@ -637,7 +643,7 @@ section.skills{
     width: 25vw;
 }
 
-/* Contato */
+/*Contato*/
 .formcontato__botao{
     width: 38vw;
 }
