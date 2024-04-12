@@ -1,11 +1,12 @@
+<img src="https://cdn.discordapp.com/attachments/1206012871251853315/1228402284103467088/capa-repositorio.png?ex=662be9c7&is=661974c7&hm=fe96de62448054884195811d25e1f695faad9f4aa971721c0907b891f6154093&" alt="banner">
+
 # Portifólio
 
 Primeiro challenge da formação front-end do projeto Oracle.
 
 ## 🔨 Funcionalidades do projeto
 
-Projeto com design responsivo, exibindo seções de formação acadêmica, projetos anteriores e informações do desenvolvedor.
-![](img/amostra.gif)
+Projeto com design responsivo para mobile, exibindo seções de formação acadêmica, projetos anteriores e informações do desenvolvedor.
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
@@ -13,7 +14,7 @@ As  tecnologias utilizadas pra isso são:
 
 - `JavaScript`: utilizado para validação do formulário de envio.
 - `HTML`: utilizado para criar seções e interface do site.       
-- `CSS`: utilizado para estilizar e apresentar a interface do usuário, proporcionando uma experiência visual agradável.
+- `CSS`: utilizado para estilizar e apresentar a interface do usuário com responsividade, proporcionando uma experiência visual agradável.
 
 ## 🎯 Preview
 
