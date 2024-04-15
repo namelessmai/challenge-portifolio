@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Portifólio Maiara Dev</title>
 </head>
 <body>
@@ -56,29 +57,28 @@
         </div>
     </section>
 <!-- Sessão de Skills/Habilidades -->
-    <section class="skills" id="tecnologias">        
-            <div class="skills__line">
-                <img class="skills__img-logo" src="assets/ilustracao-notebook.gif" alt="ilustração notebook" width="auto" height="200">
-                <div class="skills__box">
-                    <ul class="skills__box-list">
-                        <li><img class="skills__img" src="assets/logo-javascript.svg" alt="logo javascript"></li>
-                    </ul>
+<section class="skills" id="tecnologias">     
+    <h3 class="skills__title" id="tecnologias">Tecnologias</h3>   
+    <div class="skills__line">
+        <img class="skills__img-logo" src="assets/ilustracao-notebook.gif" alt="ilustração notebook">
+        <div class="skills__box">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/logo-javascript.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/logo-html.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/logo-css.svg" alt=""></div>
                 </div>
-                
-                <div class="skills__box">
-                    <ul class="skills__box-list">
-                        <li><img class="skills__img" src="assets/logo-html.svg" alt=" logo html"></li>
-                    </ul>
-                </div>
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+                <!-- Botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>           
+        </div>    
+    </div>
+</section>
 
-                <div class="skills__box">
-                    <ul class="skills__box-list">
-                        <li><img class="skills__img" src="assets/logo-css.svg" alt="logo css"></li>
-                    </ul>
-                </div>    
-            <h3 class="skills__title" id="tecnologias">Tecnologias</h3>
-        </div>
-    </section>
     <!-- Sessão de Histórico Acadêmico -->
     <section class="academic" id="formacao">
         <h2 class="academic__title">Formação acadêmica</h2>
@@ -179,5 +179,25 @@
         </section>
     </div>
 <script src="validate.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      slidesPerView: 2,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  
 </body>
 </html>
