@@ -473,6 +473,7 @@
  
  .skills__title{
      font-size: 1em;
+     font-weight: 700;
  }
  
  .skills__img-logo {
@@ -571,7 +572,7 @@
  
  
  /*Mobile*/
- @media (max-width: 425px) {
+ @media (max-width: 480px) {
  
  /*Menu*/
  section.menu{
