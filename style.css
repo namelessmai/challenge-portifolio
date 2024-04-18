@@ -102,7 +102,7 @@
  }
  .title__profile{
     filter: 
-        drop-shadow( 4px 4px 4px #00000099);;
+        drop-shadow( 4px 4px 2px #00000099);;
  }
  .about__info{
      display: flex;
@@ -439,6 +439,8 @@
  .title__profile{
      width: 30%;
      height: 10%;
+        filter: 
+            drop-shadow( 2px 2px 2px #00000099);;
  }
  
  .title__bio {
@@ -622,6 +624,11 @@
  
  .title__subsection {
      margin: 0.5rem;
+ }
+
+ .title__profile{
+    filter: 
+        drop-shadow( 2px 2px 2px #00000099);;
  }
  
  /*Tecnologias*/
