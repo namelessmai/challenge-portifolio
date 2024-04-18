@@ -100,7 +100,10 @@
      padding: 3% 5%;
      
  }
- 
+ .title__profile{
+    filter: 
+        drop-shadow( 4px 4px 4px #00000099);;
+ }
  .about__info{
      display: flex;
      justify-content: center;
@@ -112,6 +115,11 @@
      font-size: 2em;
      font-family: var(--fonte-secundaria);
      font-weight: 100;
+ }
+
+ .about_img{
+    filter: 
+    drop-shadow( 4px 4px 5px #00000099);
  }
  
  .about__paragraph-container{
@@ -195,6 +203,7 @@
  
  .academic__courses__item__img{
      background: #ffffff;
+     box-shadow: 2px 2px 8px #000000;
      padding: 3em;
  }
  
@@ -333,6 +342,8 @@
  
  .formcontato__img{
      width: 20vw;
+     filter: 
+        drop-shadow( 4px 4px 8px #00000099);
  }
  
  .formcontato--esquerda{
