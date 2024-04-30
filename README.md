@@ -12,7 +12,8 @@ Projeto com design responsivo para mobile, exibindo seções de formação acad�
 
 As  tecnologias utilizadas pra isso são:
 
-- `JavaScript`: utilizado para validação do formulário de envio.
+- `JavaScript`: utilizado para validação do formulário de envio e inclusão de API de cursos realizados na Alura.
+- `Json`: manipulação dos dados da API
 - `HTML`: utilizado para criar seções e interface do site.       
 - `CSS`: utilizado para estilizar e apresentar a interface do usuário com responsividade, proporcionando uma experiência visual agradável.
 
