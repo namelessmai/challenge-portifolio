@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
 :root{
     --cor-primeira: #3D3B40;
     --cor-segunda: #D5CDE4;
@@ -412,277 +415,325 @@
      margin: 1px;
  }
  
+
+/* Pag Cursos */
+
+section.cursos{
+    padding: 1% 4%;
+    background: var(--cor-segunda);
+}
+
+.cursos__title{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 1.5em;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-quarta);
+}
+
+.curso {
+    background-color: var(--cor-primeira);
+    width: 20vw;
+    padding: 15px;
+    justify-content: center;
+}
+  
+.curso-name {
+    font-size: 1.5rem;
+    color: var(--cor-segunda);
+}
+
+.curso-info {
+color: var(--cor-terceira);
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+}
+  
+#containerCursos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+  
  
  /*Tablet*/
- @media (max-width: 768px) {
+@media (max-width: 768px) {
  
  /* Menu */
- section.menu{
-     flex-wrap: nowrap;
-     position:static;
+section.menu{
+    flex-wrap: nowrap;
+    position:static;
      
- }
+}
  
- .menu__list__item{
-     display: none;
- }
+.menu__list__item{
+    display: none;
+}
  
- .menu__list__item.email{
-     display: block;
- }
+.menu__list__item.email{
+    display: block;
+}
  
  /*Title*/
- section.title{
-     padding: 6% 3%;
- }
+section.title{
+    padding: 6% 3%;
+}
  
- .title__profile{
-     width: 30%;
-     height: 10%;
+.title__profile{
+    width: 30%;
+    height: 10%;
         filter: 
             drop-shadow( 2px 2px 2px #00000099);;
- }
+}
  
- .title__bio {
-     font-size: 1em;
- }
+.title__bio {
+    font-size: 1em;
+}
  
- .title__subsection{
-     font-size: 0.7em;
- }
+.title__subsection{
+    font-size: 0.7em;
+}
  
  /* Sobre */
- .about__info{
-     flex-direction: column;
-     align-items: flex-start;
-     gap: 0;
- }
+.about__info{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
  
- .about_img{
-     display: none;
- }
+.about_img{
+    display: none;
+}
  
- .about__title{
-     font-size: 1em;
-     font-weight: 700;
-     margin: 2px 0px;
- }
+.about__title{
+    font-size: 1em;
+    font-weight: 700;
+    margin: 2px 0px;
+}
  
- .about__paragraph {
-     font-size: 0.8em;
-     font-weight: 400;
-     margin-left: 0;
-     width: 90vw;
- }
+.about__paragraph {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-left: 0;
+    width: 90vw;
+}
  
- /*Tecnologias*/
+/*Tecnologias*/
  
- .skills__line{
-     gap: 0;
- }
- .skills__img-logo{
-     width: 100vw;
- }
+.skills__line{
+    gap: 0;
+}
+.skills__img-logo{
+    width: 100vw;
+}
  
  .skills__title{
-     font-size: 1em;
-     font-weight: 700;
- }
+    font-size: 1em;
+    font-weight: 700;
+}
  
- .skills__img-logo {
-     width: 50%;
- }
+.skills__img-logo {
+    width: 50%;
+}
  
- .swiper{
-     width: 45vw;
- }
- 
- 
- /*Experiências acadêmicas*/
- .academic__title{
-     margin-top: 15px;
-     font-weight: 700;
-     font-size: 1em;
- }
- 
- .academic__courses {
-     gap: 2%;
- }
- 
- .academic__courses__list h4{
-     font-size: 0.7em;
- }
-     
- .academic__courses__list p {
-     font-size: 0.7em;
- }
- 
- .academic__courses__item__img {
-     display: flex;
-     width: 40vw;
-     padding: 0;
-     justify-content: center;
- }
- 
- /*Projetos*/
- .experience__section__title {
-     margin-top: 10px;
-     font-weight: 700;
-     font-size: 1em;
- }
- 
- .experience__box{
-     flex-direction: column;
-     align-items: flex-start;
- }
- 
- .reverse-order {
-     gap: 20px;
- }
- 
- .experience__img {
-     width: 90vw;
- }
- 
- .experience__title{
-     font-size: 0.7em;
- }
- 
- .experience__text {
-     font-size: 0.6em;
- }
- 
- .experiencia__botao--repo{
-     margin-left: 0;
- }
- 
- .experiencia__botao--demo{
-     width: 13vw;
- }
- 
- /* Contato */
- .formcontato__title {
-     font-weight: 700;
-     font-size: 1em;
- }
- 
- .formcontato__subtext{
-     font-size: 0.7em;
- }
- 
- .formcontato__img{
-     display: none;
- }
- 
- .formcontato__form{
-     width: 90vw;
- }
- 
- .formcontato__botao {
-     width: 19vw;
- }
- }
- 
- 
- /*Mobile*/
- @media (max-width: 480px) {
- 
- /*Menu*/
- section.menu{
-  padding: 1%;
- }
- 
- .menu__list{
-     margin: 0;
-     margin-right: 0.5rem;
- }
- 
- .menu__list__item.email {
-     font-size: 0.7em;
- }
- 
- /*Titulo*/
- section.title{
-     padding: 2%
- }
- 
- .title__container{
-     width: 80vw;
- }
- 
- .title__div{
-     flex-direction: column;
- }
- 
- .title__network{
-     justify-content: center ;
- }
- 
- .title__bio{
-     margin: 0.5rem;
- }
- 
- .title__subsection {
-     margin: 0.5rem;
- }
+.swiper{
+    width: 45vw;
+}
 
- .title__profile{
+ 
+/*Experiências acadêmicas*/
+ .academic__title{
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 1em;
+}
+ 
+.academic__courses {
+    gap: 2%;
+}
+ 
+.academic__courses__list h4{
+    font-size: 0.7em;
+}
+     
+.academic__courses__list p {
+    font-size: 0.7em;
+}
+ 
+.academic__courses__item__img {
+    display: flex;
+    width: 40vw;
+    padding: 0;
+    justify-content: center;
+}
+ 
+/*Projetos*/
+.experience__section__title {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1em;
+}
+ 
+.experience__box{
+    flex-direction: column;
+    align-items: flex-start;
+}
+ 
+.reverse-order {
+    gap: 20px;
+}
+ 
+.experience__img {
+    width: 90vw;
+}
+ 
+.experience__title{
+    font-size: 0.7em;
+}
+ 
+.experience__text {
+    font-size: 0.6em;
+}
+ 
+.experiencia__botao--repo{
+    margin-left: 0;
+}
+ 
+.experiencia__botao--demo{
+    width: 13vw;
+}
+ 
+/* Contato */
+.formcontato__title {
+    font-weight: 700;
+    font-size: 1em;
+}
+ 
+.formcontato__subtext{
+    font-size: 0.7em;
+}
+ 
+.formcontato__img{
+    display: none;
+}
+ 
+.formcontato__form{
+    width: 90vw;
+}
+ 
+.formcontato__botao {
+    width: 19vw;
+}
+
+.curso {
+    width: 25vw;
+    padding: 20px;
+}
+}
+ 
+/*Mobile*/
+@media (max-width: 480px) {
+ 
+/*Menu*/
+section.menu{
+    padding: 1%;
+}
+ 
+.menu__list{
+    margin: 0;
+    margin-right: 0.5rem;
+}
+ 
+.menu__list__item.email {
+    font-size: 0.7em;
+}
+ 
+/*Titulo*/
+section.title{
+    padding: 2%
+}
+ 
+.title__container{
+    width: 80vw;
+}
+ 
+.title__div{
+    flex-direction: column;
+}
+ 
+.title__network{
+    justify-content: center ;
+}
+ 
+.title__bio{
+    margin: 0.5rem;
+}
+ 
+.title__subsection {
+    margin: 0.5rem;
+}
+
+.title__profile{
     filter: 
         drop-shadow( 2px 2px 2px #00000099);;
- }
+}
  
- /*Tecnologias*/
+/*Tecnologias*/
  section.skills{
-     padding: 2%;
- }
+    padding: 2%;
+}
  
+.skills__title {
+    display: block;
+    font-size: 1em;
+}
+ 
+.skills__img-logo{
+    display: none;
+}
+ 
+.swiper {
+    width: 70vw;
+}
+ 
+/*Formação Acadêmica*/
  .skills__title {
-     display: block;
-     font-size: 1em;
- }
+    padding: 2%;
+}
  
- .skills__img-logo{
-     display: none;
- }
+.academic__courses{
+    flex-direction: column;
+    align-items: center;
+}
  
- .swiper {
-     width: 70vw;
- }
+.academic__courses__item__img{
+    width: 80vw;
+}
  
- /*Formação Acadêmica*/
- .skills__title {
-     padding: 2%;
- }
+.academic__courses__list{
+    margin: 0.5rem;
+}
  
- .academic__courses{
-     flex-direction: column;
-     align-items: center;
- }
+.academic__courses__list p {
+    font-size: 0.6em;
+}
  
- .academic__courses__item__img{
-     width: 80vw;
- }
+/*Projetos*/
+.experience__info{
+    width: 70vw;
+}
  
- .academic__courses__list{
-     margin: 0.5rem;
- }
+.experiencia__botao--demo{
+    width: 25vw;
+}
  
- .academic__courses__list p {
-     font-size: 0.6em;
- }
- 
- /*Projetos*/
- .experience__info{
-     width: 70vw;
- }
- 
- .experiencia__botao--demo{
-     width: 25vw;
- }
- 
- /*Contato*/
- .formcontato__botao{
-     width: 38vw;
- }
- }
+/*Contato*/
+.formcontato__botao{
+    width: 38vw;
+}
+}
  
