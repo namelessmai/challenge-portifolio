@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,21 +11,38 @@
 <body>
     <!-- Sessão de Menu  -->
     <div class="all">
-    <section class="menu">
-        <header class="menu__logo">
-            <a href="index.html"><img src="assets/logo-home.svg" alt="home" width="40" height="40"></a>           
-        </header>
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
-                <li class="menu__list__item"><a href="#tecnologias">Tecnologias</a></li>
-                <li class="menu__list__item"><a href="#formacao">Formações</a></li>
-                <li class="menu__list__item"><a href="cursos.html">Cursos</a></li>
-                <li class="menu__list__item"><a href="#projetos">Projetos</a></li>
-                <li class="menu__list__item email"><a href="#contato">Contato</a></li>
-            </ul>
+        <nav class="menu">
+            <div class="container">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-toggle-label">
+                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                </label>
+                <ul class="menu__nav">
+                    <li class="menu__list__item">
+                        <a href="index.html" class="lista-menu__link">Home</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="#sobremim" class="lista-menu__link">Sobre mim</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="#tecnologias" class="lista-menu__link">Tecnologias</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="#formacao" class="lista-menu__link">Formações</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="cursos.html" class="lista-menu__link">Cursos</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="#projetos" class="lista-menu__link">Projetos</a>
+                    </li>
+                    <li class="menu__list__item email">
+                        <a href="#contato" class="lista-menu__link">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </section>
+        
 <!-- Sessão de Header/Title/Hero -->
     <section class="title">
         <div class="title__div">

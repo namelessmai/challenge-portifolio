@@ -39,27 +39,71 @@
  }
  
  /*Sessão Menu*/
- section.menu {
-     background: var(--cor-setima);
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.menu-toggle:checked~.menu-toggle-label > .cabecalho__menu-hamburguer {
+    background-image: url("../assets/Menu\ Aberto.svg");
+}
+
+.menu-toggle:checked~.menu-toggle-label {
+    background: var(--cor-quarta);
+}
+
+.menu{
+    background-color: var(--cor-setima);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
  
- .menu__logo{
-     display: flex;
-     margin: 1rem;
- }
- 
- .menu__list {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: flex-end;
-     margin-right: 2.5rem;
-     align-items: center;
-     gap: 1rem;
- }
- 
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.menu__nav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 27vw;
+}
+
+.menu-toggle:checked~.menu__nav{
+    display: block;
+}
+
+.menu__list__item{
+    padding: 0.9em;
+    background-color: var(--cor-segunda);
+}
+
+.lista-menu__link {
+    font-size: 1em;
+    font-family: var(--fonte-secundaria);
+    background: var(--cor-quarta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.menu-toggle, 
+.container__texto {
+    display: none;
+}
+
  /*Sessão Title*/
  section.title{
      background-color: var(--cor-segunda);
@@ -416,38 +460,38 @@
  }
  
 
-/* Pag Cursos */
+/*Pag Cursos*/
 
 section.cursos{
-    padding: 1% 4%;
+    padding: 2% 5%;
     background: var(--cor-segunda);
 }
 
 .cursos__title{
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: 50px;
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: var(--fonte-secundaria);
     color: var(--cor-quarta);
 }
 
 .curso {
     background-color: var(--cor-primeira);
-    width: 20vw;
-    padding: 15px;
+    width: 25vw;
+    padding: 1.5rem;
     justify-content: center;
 }
   
 .curso-name {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--cor-segunda);
 }
 
 .curso-info {
 color: var(--cor-terceira);
   font-family: var(--fonte-principal);
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
   
 #containerCursos {
@@ -455,27 +499,24 @@ color: var(--cor-terceira);
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 20px;
 }
-  
  
- /*Tablet*/
+/*Tablet*/
 @media (max-width: 768px) {
  
- /* Menu */
-section.menu{
-    flex-wrap: nowrap;
-    position:static;
-     
+/* Menu */
+.lista-menu__link {
+    font-size: 0.7em;  
 }
- 
-.menu__list__item{
-    display: none;
+
+.menu__list__item {
+    padding: 0.5em;
+    background-color: var(--cor-segunda);
 }
- 
-.menu__list__item.email{
-    display: block;
+
+.menu__nav{
+    width: 30vw;
 }
  
  /*Title*/
@@ -629,27 +670,52 @@ section.title{
     width: 19vw;
 }
 
+/*Pag Cursos*/
+
+.cursos__title{
+    font-weight: 700;
+    font-size: 1em;
+}
+
 .curso {
-    width: 25vw;
-    padding: 20px;
+    background-color: var(--cor-primeira);
+    width: 70vw;
+    padding: 1rem;
+    justify-content: center;
+}
+  
+.curso-name {
+    font-size: 1.5rem;
+    color: var(--cor-segunda);
+}
+
+.curso-info {
+color: var(--cor-terceira);
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+}
+  
+#containerCursos {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 }
- 
+
 /*Mobile*/
 @media (max-width: 480px) {
- 
-/*Menu*/
-section.menu{
-    padding: 1%;
+
+ /* Menu */
+.lista-menu__link {
+    font-size: 0.7em;  
 }
- 
-.menu__list{
-    margin: 0;
-    margin-right: 0.5rem;
+
+.menu__list__item {
+    padding: 0.5em;
 }
- 
-.menu__list__item.email {
-    font-size: 0.7em;
+
+.menu__nav{
+    width: 35vw;
 }
  
 /*Titulo*/
