@@ -1,6 +1,6 @@
 async function cursosAlura() {
   try {
-    const resposta = await fetch('https://www.alura.com.br/api/dashboard/5a684cd3f980be5290ed76c3e24367bc81c84a552f17d3b4ef3bf789f8e186fd');
+    const resposta = await fetch('https://www.alura.com.br/api/dashboard/b52d1a3d255db9e1e6056b07dcbc500bb40e972ffbb028e3a305702b1819f4eb');
     if (!resposta.ok) {
       throw new Error('Erro ao obter os cursos');
     }
