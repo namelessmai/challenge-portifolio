@@ -77,7 +77,6 @@
     display: none;
     position: absolute;
     top: 100%;
-    width: 27vw;
 }
 
 .menu-toggle:checked~.menu__nav{
@@ -85,7 +84,7 @@
 }
 
 .menu__list__item{
-    padding: 0.9em;
+    padding: 1em;
     background-color: var(--cor-segunda);
 }
 
@@ -458,67 +457,7 @@
  .footer__rodape p {
      margin: 1px;
  }
- 
 
-/*Pag Cursos*/
-
-section.cursos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2% 10%;
-    background: var(--cor-segunda);
-}
-
-.cursos__title{
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 100;
-    font-size: 2em;
-    font-family: var(--fonte-secundaria);
-    color: var(--cor-quarta);
-}
-
-.curso {
-    background-color: var(--cor-primeira);
-    width: 25vw;
-    padding: 1.5rem;
-    justify-content: center;
-}
-  
-.curso-name {
-    font-size: 2rem;
-    color: var(--cor-segunda);
-}
-
-.curso-info {
-color: var(--cor-terceira);
-  font-family: var(--fonte-principal);
-  font-size: 1.5rem;
-}
-  
-#containerCursos {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-#loadMoreBtn { 
-    font-family: var(--fonte-secundaria);
-    color: var(--cor-quinta);
-    border: none;
-    border-radius: 16px;
-    background-color: var(--cor-terceira);
-    padding: 0.7rem 0.9rem;
-    font-size: 0.5em;
-    cursor: pointer;
-    width: 12vw;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-    margin-top: 25px;
-}
  
 /*Tablet*/
 @media (max-width: 768px) {
@@ -688,40 +627,6 @@ section.title{
     width: 19vw;
 }
 
-/*Pag Cursos*/
-
-.cursos__title{
-    font-weight: 700;
-    font-size: 1em;
-}
-
-.curso {
-    background-color: var(--cor-primeira);
-    width: 70vw;
-    padding: 1rem;
-    justify-content: center;
-}
-  
-.curso-name {
-    font-size: 1.5rem;
-    color: var(--cor-segunda);
-}
-
-.curso-info {
-color: var(--cor-terceira);
-  font-family: var(--fonte-principal);
-  font-size: 1rem;
-}
-  
-#containerCursos {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-#loadMoreBtn { 
-    width: 20vw;
-}
 }
 
 /*Mobile*/
@@ -729,7 +634,7 @@ color: var(--cor-terceira);
 
  /* Menu */
 .lista-menu__link {
-    font-size: 0.7em;  
+    font-size: 0.5em;  
 }
 
 .menu__list__item {
@@ -823,5 +728,7 @@ section.title{
 .formcontato__botao{
     width: 38vw;
 }
+
+
 }
  
