@@ -718,6 +718,10 @@ color: var(--cor-terceira);
     flex-direction: column;
     align-content: center;
 }
+
+#loadMoreBtn { 
+    width: 20vw;
+}
 }
 
 /*Mobile*/
