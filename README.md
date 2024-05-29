@@ -1,4 +1,4 @@
-<img src="https://cdn.discordapp.com/attachments/1206012871251853315/1228402284103467088/capa-repositorio.png?ex=662be9c7&is=661974c7&hm=fe96de62448054884195811d25e1f695faad9f4aa971721c0907b891f6154093&" alt="banner">
+<img src="https://live.staticflickr.com/65535/53755234185_e6dc8e8776_b.jpg" alt="banner">
 
 # Portifólio
 
